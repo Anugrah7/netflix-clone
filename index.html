@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Comfortaa:wght@300..700&family=Courgette&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Rose:wght@300..700&family=Rowdies:wght@300;400;700&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-full bgImage sm:w-full"></div>
+
+        <!-- Navbar -->
+        <div class="bg-transparent p-3 flex items-center justify-between w-screen fixed z-10">
+            <img class="w-16 sm:w-32 lg:w-40" src="./assets/images/logo.png" alt="">
+            <section class="flex items-center space-x-2 sm:space-x-4">
+                <!-- Custom Dropdown -->
+                <div class="relative">
+                    <button class="sm:bg-black px-2 py-1 sm:px-3 sm:py-2 rounded-md text-white flex items-center border-inherit">
+                        <i class="sm:bi bi-translate mr-1 sm:mr-2"></i> English
+                        <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+                        <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center">
+                            <i class="bi bi-translate mr-2"></i> English
+                        </a>
+                        <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center"> Hindi </a>
+                    </div>
+                </div>
+
+                <!-- Sign In Button -->
+                <button class="rounded-md bg-red-600 px-2 py-1 sm:px-3 sm:py-2 font-bold">Sign In</button>
+            </section>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="absolute mt-[40%] sm:mt-[17%] ml-[8%] sm:ml-[33%]">
+            <h1 class="font-black text-3xl sm:text-4xl lg:text-6xl">Unlimited movies, TV <br>
+                <span class="ml-9 sm:ml-20 mt-1 sm:mt-10 block sm:inline">shows and more</span>
+            </h1>
+        </div>
+
+        <div class="absolute mt-[60%] sm:mt-[25%] ml-[22%] sm:ml-[43%]">
+            <p class="text-sm font-semibold sm:text-lg font-bold">Starts at &#8377; 149. Cancel anytime.</p>
+        </div>
+
+        <!-- Email Section -->
+        <div class="absolute mt-[69%] mr-8 sm:mt-[27%] sm:ml-[38%] ml-[10%] text-center sm:text-left">
+            <p class="text-sm sm:text-md font-medium">Ready to watch? Enter your email to create or restart your membership</p>
+        </div>
+
+        <!-- Input and Button Section -->
+        <div class="absolute mt-[80%] sm:mt-[30%] ml-[12%] sm:flex sm:items-center sm:ml-[38%]">
+            <input class="px-5 sm:px-10 ml-[4%] py-5 bg-gray-900 bg-opacity-50 text-white border-solid border-inherit rounded-md w-[70%] sm:w-auto" type="email" name="email" id="email" placeholder="Email address">
+            <button class="bg-red-600 px-5 py-2 mt-5 ml-[20%] sm:mt-0 sm:ml-4 font-bold rounded">Get Started <span>></span></button>
+        </div>
+        <!-- trending Now -->
+<div class="TrendingNow absolute mt-[120%] ml-[5%] sm:mt-[50%] sm:ml-[3%]">
+    <div><h1 class="text-4xl font-bold trendHead">Trending Now</h1></div>
+    <div class="container mx-auto mt-[3%] ml-[2%] flex flex-col sm:flex-row">
+        <div class="relative">
+            <button class="sm:bg-black px-2 py-1 sm:px-3 sm:py-2 rounded-md text-white flex items-center border-inherit font-semibold">
+                India
+                <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-36 bg-white border border-white-200 rounded-md shadow-lg hidden">
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center">
+                    <i class="bi bi-translate mr-2"></i> India
+                </a>
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center"> China </a>
+            </div>
+        </div>
+        <div class="relative ml-[1%] mt-2 sm:mt-0">
+            <button class="sm:bg-black px-2 py-1 sm:px-3 sm:py-2 rounded-md text-white flex items-center border-inherit font-semibold">
+                Movies
+                <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center">
+                    <i class="bi bi-translate mr-2"></i> Movies
+                </a>
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center"> China </a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[2%] ml-[4%] flex flex-wrap justify-between gap-y-3">
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing with p-5 -->
+                <img class="rounded-md w-full" src="./assets/images/trending/img1.webp" alt="">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing with p-5 -->
+                <img class="rounded-md w-full" src="./assets/images/trending/img3.webp" alt="">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing with p-5 -->
+                <img class="rounded-md w-full" src="./assets/images/trending/img4.jpeg" alt="">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing with p-5 -->
+                <img class="rounded-md w-full" src="./assets/images/trending/img5.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- korean -->
+<div class="TrendingNow absolute mt-[390%] ml-[5%] sm:mt-[65%]">
+    <div class="container mx-auto mt-[9%] ml-[1%] flex flex-col sm:flex-row">
+        <div class="relative">
+            <button class="sm:bg-black px-2 py-1 sm:px-3 sm:py-2 rounded-md text-white flex items-center border-inherit font-semibold">
+                Korean
+                <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-36 bg-white border border-white-200 rounded-md shadow-lg hidden">
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center">
+                    <i class="bi bi-translate mr-2"></i> Korean
+                </a>
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center"> China </a>
+            </div>
+        </div>
+        <div class="relative ml-[1%] mt-2 sm:mt-0">
+            <button class="sm:bg-black px-2 py-1 sm:px-3 sm:py-2 rounded-md text-white flex items-center border-inherit font-semibold">
+                Movies
+                <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center">
+                    <i class="bi bi-translate mr-2"></i> Movies
+                </a>
+                <a href="#" class="block text-black hover:bg-gray-100 px-4 py-2 flex items-center"> China </a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[2%] ml-[1%] flex flex-wrap justify-between ">
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing -->
+                <img class="rounded-md w-full" src="./assets/images/korean/img1.jpeg" alt="">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing -->
+                <img class="rounded-md w-full" src="./assets/images/korean/img2.jpeg" alt="">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing -->
+                <img class="rounded-md w-full" src="./assets/images/korean/img3.jpeg" alt="">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/4">
+            <div class="p-5"> <!-- Added wrapper div for spacing -->
+                <img class="rounded-md w-full" src="./assets/images/korean/img5.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Other -->
+<div class="TrendingNow absolute mt-[650%] ml-[4%] sm:mt-[80%]">
+    <div class="container mx-auto mt-[9%] ml-[2%] flex flex-col sm:flex-row">
+    </div>
+    <div class="mt-[2%] ml-[5%] flex flex-wrap justify-between gap-y-4">
+        <div class="w-full sm:w-1/2">
+            <img class="rounded-md w-full" src="./assets/images/landing/l1.png" alt="">
+        </div>
+        <div class="w-full sm:w-1/2 mt-[10%]">
+            <p class="hidden sm:block sm:w-10/12 text-justify font-semibold text-xl para">
+                "Don’t Look Up" is a satirical sci-fi comedy film directed by Adam McKay that has captivated audiences with its witty take on contemporary issues. The film stars an ensemble cast including Leonardo DiCaprio, Jennifer Lawrence, and Meryl Streep, and follows two astronomers who discover a comet on a collision course with Earth. As they attempt to warn humanity, they face a series of challenges from a society more interested in spectacle than survival. With its sharp humor and timely commentary on media and politics, Don’t Look Up offers both entertainment and thought-provoking insights, making it a must-watch on our Netflix clone platform.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- More -->
+<div class="MoreREason container absolute mt-[740%] sm:mt-[130%] ml-[5%] w-full">
+    <div>
+        <h1 class="text-xl ml-[10%]  sm:text-4xl font-bold mr-[50%]">More Reasons to Join</h1>
+    </div>
+    <div class="mt-[4%] pr-0  gap-y-5 flex flex-wrap justify-around sm:mt-[4%] ml-[9%]">
+        <div class="w-full bg-gradient-to-br from-indigo-900 via-zinc-900 to-pink-900 rounded-md h-48 sm:w-64 sm:h-72 ">
+            <h1 class="font-bold mt-5 text-center text-lg sm:text-xl">Enjoy On Your TV</h1>
+            <p class="mt-5 px-3 text-xs sm:text-sm text-center text-justify text-gray-200">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            <i class=" sm: mt-28 ml-48 text-3xl fa-solid fa-tv"></i>
+        </div>
+        <div class="w-full bg-gradient-to-br from-indigo-900 via-zinc-900 to-pink-900 rounded-md h-48 sm:w-64 sm:h-72">
+            <h1 class="font-bold mt-5 text-center text-lg sm:text-xl">Download your shows to watch offline</h1>
+            <p class="mt-5 px-3 text-xs sm:text-sm text-center text-justify text-gray-200">Save your favourites easily and always have something to watch.</p>
+            <i class="sm: mt-[38%] ml-48 text-3xl fa-solid fa-download"></i>
+        </div>
+        <div class="w-full bg-gradient-to-br from-indigo-900 via-zinc-900 to-pink-900 rounded-md h-48 sm:w-64 sm:h-72">
+            <h1 class="font-bold mt-5 text-center text-lg sm:text-xl">Watch everywhere</h1>
+            <p class="mt-5 px-3 text-xs sm:text-sm text-center text-justify text-gray-200">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            <i class="mt-[10%] sm:mt-[42%] ml-48 text-3xl fa-solid fa-binoculars"></i>
+        </div>
+        <div class="w-full bg-gradient-to-br from-indigo-900 via-zinc-900 to-pink-900 rounded-md h-48 sm:w-64 sm:h-72">
+            <h1 class="font-bold mt-5 text-center text-lg sm:text-xl">Create profiles for kids</h1>
+            <p class="mt-5 px-3 text-xs sm:text-sm text-center text-justify text-gray-200">Send kids on adventures with their favourite characters in a space made just for them — free with your membership</p>
+            <i class="mt-[12%] sm:mt-[36%] ml-48 text-3xl fa-solid fa-user-group"></i>
+        </div>
+    </div>
+</div>
+<!--Frequently Asked Question -->
+<div class="Question container absolute mt-[980%] sm:mt-[155%] ml-[13%] w-full max-w-screen-lg">
+    <div>
+        <h1 class="text-xl ml-6 sm:text-4xl font-semibold">Frequently Asked Questions</h1>
+    </div>
+    <div class="ml-6">
+        <div class="mt-[4%] bg-slate-800 w-[75%] sm:w-[100%] py-3 px-2 flex flex-wrap justify-between hover:bg-slate-900 sm:mt-[3%] ">
+            <div>
+                <h2 class="font-medium text-3xl pl-2">What is Netflix</h2>
+            </div>
+            <div>
+                <h1 class="text-5xl font-semibold">+</h1>
+            </div>
+        </div>
+        <div class="bg-slate-800 w-[75%] sm:w-[100%] py-3 px-2 flex flex-wrap justify-between hover:bg-slate-900 sm:mt-[1.1%]">
+            <div>
+                <h2 class="font-medium text-3xl pl-2">How Much Does Netflix Cost</h2>
+            </div>
+            <div>
+                <h1 class="text-5xl font-semibold">+</h1>
+            </div>
+        </div>
+        <div class="bg-slate-800 w-[75%] sm:w-[100%] py-3 px-2 flex flex-wrap justify-between hover:bg-slate-900 sm:mt-[1.1%]">
+            <div>
+                <h2 class="font-semibold text-3xl pl-2">Where Can I Watch</h2>
+            </div>
+            <div>
+                <h1 class="text-5xl font-semibold">+</h1>
+            </div>
+        </div>
+        <div class="bg-slate-800 w-[75%] sm:w-[100%] py-3 px-2 flex flex-wrap justify-between hover:bg-slate-900 sm:mt-[1.1%]">
+            <div>
+                <h2 class="font-semibold text-3xl pl-2">How Do I Cancel</h2>
+            </div>
+            <div>
+                <h1 class="text-5xl font-semibold">+</h1>
+            </div>
+        </div>
+        <div class="bg-slate-800 w-[75%] sm:w-[100%] py-3 px-2 flex flex-wrap justify-between hover:bg-slate-900 sm:mt-[1.1%]">
+            <div>
+                <h2 class="font-semibold text-3xl pl-2">What Can I Watch On Netflix</h2>
+            </div>
+            <div>
+                <h1 class="text-5xl font-semibold">+</h1>
+            </div>
+        </div>
+        <div class="bg-slate-800 w-[75%] sm:w-[100%] py-3 px-2 flex flex-wrap justify-between hover:bg-slate-900 sm:mt-[1.1%]">
+            <div>
+                <h2 class="font-semibold text-3xl pl-2">Is Netflix Good For Kids</h2>
+            </div>
+            <div>
+                <h1 class="text-5xl font-semibold">+</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer absolute mt-[1200%] sm:mt-[190%] ml-[15%] w-full max-w-screen-lg">
+    <div>
+        <p class="text-slate cursor-pointer">Questions? Call 000-800-919-1694</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-6 sm:gap-6 justify-between sm:mt-[4%] mt-6">
+        <div>
+            <ul class="cursor-pointer">
+                <h3>FAQ</h3>
+                <h3>Invester Relation</h3>
+                <h3>Privacy</h3>
+                <h3>Speed Test</h3>
+            </ul>
+        </div>
+        <div>
+            <ul class="cursor-pointer">
+                <h3>Help Centre</h3>
+                <h3>Jobs</h3>
+                <h3>Cookie Preference</h3>
+                <h3>Legal Notices</h3>
+            </ul>
+        </div>
+        <div>
+            <ul class="cursor-pointer">
+                <h3>Account</h3>
+                <h3>Ways to Watch</h3>
+                <h3>Corporate Information</h3>
+                <h3>Only On Netflix</h3>
+            </ul>
+        </div>
+        <div>
+            <ul class="cursor-pointer">
+                <h3>Media Centre</h3>
+                <h3>Terms Of Use</h3>
+                <h3>Contact Us</h3>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+
+</html>
